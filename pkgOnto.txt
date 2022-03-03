@@ -1,0 +1,16 @@
+# Ontology metadata attributes required for registration in the TIB ontology hub.
+# This file should be maintained under the source control and must be released anongside the ontology, under the same versioning scheme.
+# The file name is identical to the ontology's ttl file with .txt extension.
+
+shortName: PKGonto
+title: Personal Knowledge Graph Ontology
+description: PKGonto is an ontology describing a personal knowledge graph for web search.
+autorFullName: Eleni Ilkou
+authorEmail: ilkou@l3s.de
+maintainerFullname: Eleni Ilkou
+maintainerEmail: ilkou@l3s.de
+keywords: personal knowledge graph, knowledge graph
+license: GNU General Public License v3.0
+version: v0.1.0
+repositoryURL: https://github.com/tibonto/pkg
+releaseURL: https://github.com/tibonto/pkg/releases/tag/v0.1.0

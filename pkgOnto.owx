@@ -1,0 +1,960 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404">
+    <Prefix name="" IRI="urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchQuery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/SharedObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/PKGonto/Snippet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/educor#Accessibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/educor#UserLogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/tibonto/educor#UserProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/WebPage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/generatesResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/processes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#generatesLogs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#hasProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/memberOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/groupType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/similarityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/surfaceForm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/username"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/endTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/headline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/keywords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/startTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/url"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+        <Class IRI="https://github.com/tibonto/educor#UserLogs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://github.com/tibonto/PKGonto/Snippet"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/WebPage"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/generatesResult"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/processes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#generatesLogs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#hasProfile"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/memberOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/contains"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+        <Class IRI="https://github.com/tibonto/educor#UserProfile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SharedObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/generatesResult"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchQuery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/processes"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SharedObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+        <Class IRI="https://github.com/tibonto/educor#UserProfile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#generatesLogs"/>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#hasProfile"/>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/memberOf"/>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/contains"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchQuery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/contains"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/createsInputStream"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/dependsOn"/>
+        <Class IRI="https://github.com/tibonto/educor#Accessibility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/generatesResult"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/PKGonto/processes"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#accessibility"/>
+        <Class IRI="https://github.com/tibonto/educor#Accessibility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#generatesLogs"/>
+        <Class IRI="https://github.com/tibonto/educor#UserLogs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/tibonto/educor#hasProfile"/>
+        <Class IRI="https://github.com/tibonto/educor#UserProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/memberOf"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/groupType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/similarityScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/surfaceForm"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/username"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/author"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/endTime"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/headline"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/identifier"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/keywords"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/startTime"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/text"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/url"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/groupType"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/similarityScore"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/surfaceForm"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/username"/>
+        <Class IRI="https://github.com/tibonto/educor#UserProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/author"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/author"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/author"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SharedObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchQuery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SharedObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/description"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/email"/>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/endTime"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/headline"/>
+        <Class IRI="https://schema.org/WebPage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/identifier"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/keywords"/>
+        <Class IRI="https://schema.org/WebPage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/name"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/name"/>
+        <Class IRI="https://github.com/tibonto/educor#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/startTime"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchSession"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/text"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/InputStream"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/text"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/RecognizedEntities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/text"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/text"/>
+        <Class IRI="https://github.com/tibonto/educor#Accessibility"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/title"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/url"/>
+        <Class IRI="https://github.com/tibonto/PKGonto/SearchResult"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/groupType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/similarityScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/surfaceForm"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://github.com/tibonto/PKGonto/username"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/dateCreated"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/email"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/endTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/headline"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/identifier"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/keywords"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/startTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/text"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Group</IRI>
+        <Literal xml:lang="en">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Group</IRI>
+        <Literal xml:lang="en">A group a user is member of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/InputStream</IRI>
+        <Literal xml:lang="en">InputStream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/InputStream</IRI>
+        <Literal xml:lang="en">The input stream to the classifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/RecognizedEntities</IRI>
+        <Literal xml:lang="en">RecognizedEntities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/RecognizedEntities</IRI>
+        <Literal xml:lang="en">The recognized entities from the classifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchQuery</IRI>
+        <Literal xml:lang="en">SearchQuery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchQuery</IRI>
+        <Literal xml:lang="en">The search query the user is formulating during the web search</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchResult</IRI>
+        <Literal xml:lang="en">SearchResult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchResult</IRI>
+        <Literal xml:lang="en">The result of the search query</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchSession</IRI>
+        <Literal xml:lang="en">SearchSession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/SearchSession</IRI>
+        <Literal xml:lang="en">A search activity from the beginning to the end</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/SharedObject</IRI>
+        <Literal xml:lang="en">SharedObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/SharedObject</IRI>
+        <Literal xml:lang="en">The object that is passed to the downstream application from the backend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/Snippet</IRI>
+        <Literal xml:lang="en">Snippet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/Snippet</IRI>
+        <Literal xml:lang="en">A snippet of a webpage. It contains the title and a few lines of the webpage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/contains</IRI>
+        <Literal xml:lang="en">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/contains</IRI>
+        <Literal xml:lang="en">The content of the search session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/createsInputStream</IRI>
+        <Literal xml:lang="en">createsInputStream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/createsInputStream</IRI>
+        <Literal xml:lang="en">The different agents that are creating the input stream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/dependsOn</IRI>
+        <Literal xml:lang="en">dependsOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/dependsOn</IRI>
+        <Literal xml:lang="en">The parameters that the shared object depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/generatesResult</IRI>
+        <Literal xml:lang="en">generatesResult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/generatesResult</IRI>
+        <Literal xml:lang="en">The web results generated by the search query</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/groupType</IRI>
+        <Literal xml:lang="en">groupType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/groupType</IRI>
+        <Literal xml:lang="en">The type of a group (ex. private, public).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/processes</IRI>
+        <Literal xml:lang="en">processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/processes</IRI>
+        <Literal xml:lang="en">The input of the classifier, the item that is processing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/similarityScore</IRI>
+        <Literal xml:lang="en">similarityScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/similarityScore</IRI>
+        <Literal xml:lang="en">The similarity score is the confidence score of the classifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/surfaceForm</IRI>
+        <Literal xml:lang="en">surfaceForm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/surfaceForm</IRI>
+        <Literal xml:lang="en">The surface form of a word is the form of a word as it appears in the text. For example, the surface form of the verb &quot;go&quot; in the third person singular is &quot;goes&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/PKGonto/username</IRI>
+        <Literal xml:lang="en">username</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/PKGonto/username</IRI>
+        <Literal xml:lang="en">The username</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#Accessibility</IRI>
+        <Literal xml:lang="en">Accessibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#Accessibility</IRI>
+        <IRI>https://schema.org/accessibilitySummary</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#Accessibility</IRI>
+        <Literal xml:lang="en">It describes the user access and content accessibility rights. It can be used as a plugin point to connect with other ontologies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#User</IRI>
+        <Literal xml:lang="en">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#User</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#User</IRI>
+        <IRI>https://github.com/tibonto/educor#User</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#User</IRI>
+        <Literal xml:lang="en">A user in the system. It represents the learner in this context, as in contract to the teacher, mentor, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#UserLogs</IRI>
+        <Literal xml:lang="en">UserLogs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#UserLogs</IRI>
+        <IRI>https://github.com/tibonto/educor#UserLogs</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#UserLogs</IRI>
+        <Literal xml:lang="en">The user&apos;s history activity in the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#UserProfile</IRI>
+        <Literal xml:lang="en">UserProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#UserProfile</IRI>
+        <IRI>https://github.com/tibonto/educor#UserProfile</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#UserProfile</IRI>
+        <Literal xml:lang="en">The information related to the user profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#accessibility</IRI>
+        <Literal xml:lang="en">accessibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#accessibility</IRI>
+        <Literal xml:lang="en">The accessibility property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#generatesLogs</IRI>
+        <Literal xml:lang="en">generatesLogs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#generatesLogs</IRI>
+        <IRI>https://github.com/tibonto/educor#generatesLogs</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#generatesLogs</IRI>
+        <Literal xml:lang="en">The activity that generates logs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/tibonto/educor#hasProfile</IRI>
+        <Literal xml:lang="en">hasProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/tibonto/educor#hasProfile</IRI>
+        <IRI>https://github.com/tibonto/educor#hasProfile</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://github.com/tibonto/educor#hasProfile</IRI>
+        <Literal xml:lang="en">The property that links to the profile of an agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/WebPage</IRI>
+        <Literal xml:lang="en">WebPage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/WebPage</IRI>
+        <Literal xml:lang="en">A web page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/author</IRI>
+        <Literal xml:lang="en">author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/author</IRI>
+        <Literal xml:lang="en">The author of this content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/dateCreated</IRI>
+        <Literal xml:lang="en">dateCreated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/dateCreated</IRI>
+        <Literal xml:lang="en">The date on which the CreativeWork was created or the item was added to a DataFeed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/description</IRI>
+        <Literal xml:lang="en">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/description</IRI>
+        <Literal xml:lang="en">A description of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/email</IRI>
+        <Literal xml:lang="en">email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/email</IRI>
+        <Literal xml:lang="en">An email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/endTime</IRI>
+        <Literal xml:lang="en">endTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/endTime</IRI>
+        <Literal xml:lang="en">The endTime of the search session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/headline</IRI>
+        <Literal xml:lang="en">headline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/headline</IRI>
+        <Literal xml:lang="en">Headline of the article.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/identifier</IRI>
+        <Literal xml:lang="en">identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/identifier</IRI>
+        <Literal xml:lang="en">The URI of the recognized entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/keywords</IRI>
+        <Literal xml:lang="en">keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/keywords</IRI>
+        <Literal xml:lang="en">Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/memberOf</IRI>
+        <Literal xml:lang="en">memberOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/memberOf</IRI>
+        <Literal xml:lang="en">A group to which this Person belongs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/name</IRI>
+        <Literal xml:lang="en">The name of an item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/startTime</IRI>
+        <Literal xml:lang="en">startTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/startTime</IRI>
+        <Literal xml:lang="en">The startTime of the search session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/text</IRI>
+        <Literal xml:lang="en">text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/text</IRI>
+        <Literal xml:lang="en">The textual content of this CreativeWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/title</IRI>
+        <Literal xml:lang="en">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/title</IRI>
+        <Literal xml:lang="en">The title of an item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/url</IRI>
+        <Literal xml:lang="en">url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://schema.org/url</IRI>
+        <Literal xml:lang="en">URL of the item.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
