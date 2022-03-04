@@ -4,9 +4,23 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404> .
+@base <https://github.com/tibonto/pkg/> .
 
-<urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404> rdf:type owl:Ontology .
+
+<https://github.com/tibonto/pkg/> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://github.com/tibonto/pkg/0.1.0> ;
+                                      <http://purl.org/dc/elements/1.1/contributor> "Eleni Ilkou";  
+                                      <http://purl.org/dc/elements/1.1/creator> "Knowgraphs project" ;
+                                      <http://purl.org/dc/terms/publisher> "TIB – Leibniz Information Centre for Science and Technology, Hannover, Germany" ;
+                                      <http://purl.org/dc/terms/license> "CC-BY-SA 4.0" ;
+                                      <http://purl.org/dc/terms/created> "2021-04-19" ;
+                                      <http://purl.org/dc/terms/language> "en" ;
+                                      <http://purl.org/dc/elements/1.1/title> "PKG Ontology"@en ;
+                                      <http://purl.org/dc/elements/1.1/description> """PKG ontology describes a personalized knowledge graph for web search. The ontology is developed in OWL in Protege 5.0.0."""@en ;
+                                      <http://purl.org/dc/terms/abstract> "TBA."@en ;
+                                      owl:versionInfo "0.1.0 - first version"@en .
+
+#<urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
