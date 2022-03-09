@@ -8,9 +8,11 @@ Eleni Ilkou[^1], Davide Taibi[^2], Marco Fisichella[^1], and Tetiana Tolmachova[
 
 Web search engines thrive towards personalisation. At the same time, Personal Knowledge Graphs are gaining momentum as smaller graphs with user's related data on top of larger Knowledge Graphs. The PKG ontology aims to model the constructive aspects of a personal knowledge graph in the backend of a web search application while addressing privacy and accessibility concerns and FAIR principles. This work presents an overview of the ontology description and discusses use cases.
 
-**Resource:** [https://tibonto.github.io/pkg/](https://tibonto.github.io/pkg/)
-
 **Keywords:** Ontology, Personalized Knowledge Graph, Collaborative Learning.
+
+**GitHub repository:** [https://tibonto.github.io/pkg/](https://tibonto.github.io/pkg/)
+
+**Ontology page:** http://ontology.tib.eu/pkg/
 
 ## Ontology
 ![PKG ontology](https://github.com/tibonto/pkg/raw/gh-pages/Pkgonto.png)
