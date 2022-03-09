@@ -13,6 +13,8 @@ colors:
 buttons:
       zip_url: usecase.md
       zip_title: Use case
-      tar_url: http://example.com/
+      zip_hide: false
+      tar_url: description.md
       tar_title: PKG description
+      tar_hide: false
       github_hide: true
