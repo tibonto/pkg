@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+title: [Personal Knowledge Graph Ontology for Web Search]
+description: [PKGonto is an ontology describing a personal knowledge graph for web search]
+buttons:
+      zip_url: http://example.com/
+      zip_title: Use case
+      tar_url: http://example.com/
+      tar_title: PKG description
