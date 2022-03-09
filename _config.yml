@@ -1,4 +1,4 @@
-remote_theme: tuur29/pages-themes-cayman
+theme: jekyll-theme-cayman
 title: [Personal Knowledge Graph Ontology for Web Search]
 description: [PKGonto is an ontology describing a personal knowledge graph for web search]
 darkmode: false
