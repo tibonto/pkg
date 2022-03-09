@@ -1,8 +1,18 @@
-theme: jekyll-theme-cayman
+remote_theme: tuur29/pages-themes-cayman
 title: [Personal Knowledge Graph Ontology for Web Search]
 description: [PKGonto is an ontology describing a personal knowledge graph for web search]
+darkmode: false
+syntax_theme:
+colors:
+    gradient_left: "#155799"
+    gradient_right: "#159957"
+    header: "#fff"
+    android_theme: "#000"
+    link: "#1e6bb8"
+    section_title: "#155799"
 buttons:
       zip_url: http://example.com/
       zip_title: Use case
       tar_url: http://example.com/
       tar_title: PKG description
+      github_hide: true
