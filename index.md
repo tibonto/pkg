@@ -36,3 +36,5 @@ We would like to thank Dr. Javad Chamanara for setting up the ontology page. Thi
 4. Tolmachova, T., Ilkou, E., Xu, L.: Working towards the ideal search history interface. In: Conrad, S., Tiddi, I. (eds.) Proceedings of the CIKM 2020 Workshops co-located with 29th ACM International Conference on Information and Knowledge Management (CIKM 2020), Galway, Ireland, October 19-23, 2020. CEUR Workshop Proceedings, vol. 2699. CEUR-WS.org (2020), http://ceur-ws.org/Vol2699/paper19.pdf  
 5. Trentin, G.: Networked Collaborative Learning: Social Interaction and Active Learning (08 2010)  
 6. Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.W., da Silva Santos, L.B., Bourne, P.E., et al.: The fair guiding principles for scientific data management and stewardship. Scientific data 3(1),  1–9 (2016)
+
+---
