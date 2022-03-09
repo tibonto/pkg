@@ -13,7 +13,7 @@ Web search engines thrive towards personalisation. At the same time, Personal Kn
 **Keywords:** Ontology, Personalized Knowledge Graph, Collaborative Learning.
 
 ## Ontology
-![PKG ontology](/Pkgonto.png)
+![PKG ontology](https://github.com/tibonto/pkg/raw/gh-pages/Pkgonto.png)
 
 ## Namespaces used in PKG ontology
 
