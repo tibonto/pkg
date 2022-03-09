@@ -12,10 +12,10 @@ colors:
     link: "#1e6bb8"
     section_title: "#155799"
 buttons:
-      zip_url: usecase.md
+      zip_url: usecase
       zip_title: Use case
       zip_hide: false
-      tar_url: description.md
+      tar_url: description
       tar_title: PKG description
       tar_hide: false
       github_hide: true
