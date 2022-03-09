@@ -1,8 +1,8 @@
 # Personal Knowledge Graph Ontology for Web  
-Eleni Ilkou[^1^](#germany), Davide Taibi[^2^](#italy), Marco Fisichella[^1^](#germany), and Tetiana Tolmachova[^1^](#germany)
+Eleni Ilkou[^1], Davide Taibi[^2], Marco Fisichella[^1], and Tetiana Tolmachova[^1]
 
-[1](#germany) L3S Research Center, Leibniz University of Hannover, Germany
-[2](#italy) Institute for Educational Technology, National Research Council of Italy
+[^1]: L3S Research Center, Leibniz University of Hannover, Germany
+[^2]: Institute for Educational Technology, National Research Council of Italy
 
 ## Abstract
 
@@ -13,7 +13,7 @@ Web search engines thrive towards personalisation. At the same time, Personal Kn
 **Keywords:** Ontology, Personalized Knowledge Graph, Collaborative Learning.
 
 ## Ontology
-![PKG ontology](/Pkgonto.pdf)
+![PKG ontology](/Pkgonto.png)
 
 ## Namespaces used in PKG ontology
 
@@ -25,7 +25,6 @@ Web search engines thrive towards personalisation. At the same time, Personal Kn
 | foaf    | http://xmlns.com/foaf/spec/   |
 
 ## Acknowledgements
-
 We would like to thank Dr. Javad Chamanara for setting up the ontology page. This work was partially funded by EU H2020 project KnowGraphs (GA no. 860801).
 
 ## References
