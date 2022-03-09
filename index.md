@@ -12,7 +12,7 @@ Web search engines thrive towards personalisation. At the same time, Personal Kn
 
 **GitHub repository:** [https://tibonto.github.io/pkg/](https://tibonto.github.io/pkg/)
 
-**Ontology page:** http://ontology.tib.eu/pkg/
+**Ontology page:** [http://ontology.tib.eu/pkg/](http://ontology.tib.eu/pkg/)
 
 ## Ontology
 ![PKG ontology](https://github.com/tibonto/pkg/raw/gh-pages/Pkgonto.png)
