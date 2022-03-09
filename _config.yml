@@ -11,7 +11,7 @@ colors:
     link: "#1e6bb8"
     section_title: "#155799"
 buttons:
-      zip_url: http://example.com/
+      zip_url: usecase.md
       zip_title: Use case
       tar_url: http://example.com/
       tar_title: PKG description
