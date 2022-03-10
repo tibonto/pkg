@@ -1,6 +1,7 @@
-remote_theme: tuur29/pages-themes-cayman
+---
 title: [Personal Knowledge Graph Ontology for Web Search]
 description: [PKGonto is an ontology describing a personal knowledge graph for web search]
+remote_theme: tuur29/pages-themes-cayman
 show_downloads: true
 darkmode: false
 syntax_theme:
@@ -19,3 +20,4 @@ buttons:
       tar_title: PKG description
       tar_hide: false
       github_hide: true
+---
