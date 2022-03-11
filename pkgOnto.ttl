@@ -17,7 +17,7 @@
                                       <http://purl.org/dc/terms/language> "en" ;
                                       <http://purl.org/dc/elements/1.1/title> "PKG Ontology"@en ;
                                       <http://purl.org/dc/elements/1.1/description> """PKG ontology describes a personalized knowledge graph for web search. The ontology is developed in OWL in Protege 5.0.0."""@en ;
-                                      <http://purl.org/dc/terms/abstract> "TBA."@en ;
+                                      <http://purl.org/dc/terms/abstract> "Web search engines thrive towards personalisation. At the same time, Personal Knowledge Graphs are gaining momentum as smaller graphs with user’s related data on top of larger Knowledge Graphs. The PKG ontology aims to model the constructive aspects of a personal knowledge graph in the backend of a web search application while addressing privacy and accessibility concerns and FAIR principles. This work presents an overview of the ontology description and discusses use cases."@en ;
                                       owl:versionInfo "0.1.0 - first version"@en .
 
 #<urn:webprotege:ontology:1259d1c7-1dd0-498d-92c2-0f7d31fe8404> rdf:type owl:Ontology .
@@ -68,8 +68,7 @@ rdf:langString rdf:type rdfs:Datatype .
                                                rdfs:subPropertyOf owl:topObjectProperty ;
                                                rdfs:domain <https://github.com/tibonto/PKGonto/SharedObject> ;
                                                rdfs:range <https://github.com/tibonto/PKGonto/InputStream> ,
-                                                          <https://github.com/tibonto/PKGonto/RecognizedEntities> ,
-                                                          <https://github.com/tibonto/educor#Accessibility> ;
+                                                          <https://github.com/tibonto/PKGonto/RecognizedEntities> ;
                                                rdfs:label "dependsOn"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The parameters that the shared object depends on"@en .
 
@@ -144,6 +143,21 @@ rdf:langString rdf:type rdfs:Datatype .
                                                rdfs:label "groupType"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "The type of a group (ex. private, public)."@en .
 
+###  https://github.com/tibonto/PKGonto/surfaceForm
+<https://github.com/tibonto/PKGonto/surfaceForm> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                               rdfs:domain <https://github.com/tibonto/PKGonto/RecognizedEntities> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:label "surfaceForm"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The surface form of a word is the form of a word as it appears in the text. It represents the form in which the recognized entity was found."@en .
+
+###  https://github.com/tibonto/PKGonto/similarityScore
+<https://github.com/tibonto/PKGonto/similarityScore> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                               rdfs:domain <https://github.com/tibonto/PKGonto/RecognizedEntities> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:label "similarityScore"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The confidence score of the classifier for the given recognized entity."@en .
 
 ###  https://github.com/tibonto/PKGonto/username
 <https://github.com/tibonto/PKGonto/username> rdf:type owl:DatatypeProperty ;
@@ -163,6 +177,14 @@ rdf:langString rdf:type rdfs:Datatype .
                             rdfs:range xsd:string ;
                             rdfs:label "author"@en ;
                             <http://www.w3.org/2004/02/skos/core#definition> "The author of this content."@en .
+
+###  https://schema.org/text
+<https://schema.org/text> rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain <https://github.com/tibonto/PKGonto/SearchResult> ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "text"@en ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "The textual content of this CreativeWork."@en .
 
 
 ###  https://schema.org/dateCreated
@@ -306,12 +328,14 @@ rdf:langString rdf:type rdfs:Datatype .
 ###  https://github.com/tibonto/PKGonto/SearchQuery
 <https://github.com/tibonto/PKGonto/SearchQuery> rdf:type owl:Class ;
                                                  rdfs:label "SearchQuery"@en ;
+                                                 rdfs:seeAlso <https://schema.org/query> ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "The search query the user is formulating during the web search"@en .
 
 
 ###  https://github.com/tibonto/PKGonto/SearchResult
 <https://github.com/tibonto/PKGonto/SearchResult> rdf:type owl:Class ;
                                                   rdfs:label "SearchResult"@en ;
+                                                  rdfs:seeAlso <https://schema.org/result> ;
                                                   <http://www.w3.org/2004/02/skos/core#definition> "The result of the search query"@en .
 
 
@@ -319,6 +343,7 @@ rdf:langString rdf:type rdfs:Datatype .
 <https://github.com/tibonto/PKGonto/SearchSession> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://github.com/tibonto/educor#UserLogs> ;
                                                    rdfs:label "SearchSession"@en ;
+                                                   rdfs:seeAlso <https://schema.org/SearchAction> ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A search activity from the beginning to the end"@en .
 
 
