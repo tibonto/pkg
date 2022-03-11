@@ -21,3 +21,5 @@ buttons:
       tar_hide: false
       github_hide: true
 ---
+
+theme: jekyll-theme-cayman
