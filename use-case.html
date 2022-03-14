@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Use case</title>
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="text-white project-name">Personal Knowledge Graph Ontology for Web</h1>
+
+        <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <a href="https://tibonto.github.io/pkg/" class="btn btn-bgr text-light">Home</a>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="https://tibonto.github.io/pkg/ontology-description.html" class="btn btn-bgr text-light">PKG description</a>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <a href="https://tibonto.github.io/pkg/use-case.html" class="btn btn-bgr text-light">Use case</a>
+            </div>
+        </div>
+
+    </header>
+    <main id="content" class="main-content">
+        <h1>Use case</h1>
+
+        <p>A general use case of the PKG ontology is in the context of collaborative searching as learning scenarios.
+            More and more often, students use search engines to learn more about a specific subject. However, the large
+            number of documents provided as search results constitutes an obstacle. Students have to read, understand,
+            analyse all the results. Search engines support their users in performing keyword-based searches, but they
+            do not provide functionalities specifically designed to facilitate students’ searches for learning tasks <a href="#ref1">[1]</a>.
+            Moreover, the collaboration between users is not enabled, hindering the possibility of implementing project-based
+            learning or team-based learning activities. The PKG ontology can facilitate collaborative search and collaborative
+            learning by creating Personal Knowledge Graphs in the backend of a system application.</p>
+
+        <p>In particular, a specific use case of the PKG ontology has been integrated within the Learnweb e-learning
+            platform <a href="#ref2">[2]</a><a href="#ref3">[3]</a>. Learnweb is a platform supporting collaborative searching
+            and learning, and our ontology assists the integration of a new visualisation interface <a href="#ref4">[4]</a>.
+            In the backend of the application, the <em>SearchSession</em> related classes are integrated via the classical
+            search interface of Learnweb, and the <em>InputStream</em> is created. Then the stream is passed to the DBpedia
+            Spotlight <a href="#ref5">[5]</a> software, which generates the <em>RecognizedEntities</em> from the DBpedia
+            Knowledge Graph. This output is then processed together with the data gathered during the user’s activity,
+            and the <em>SharedObject</em> is produced concerning <em>Accessibility</em> parameters. Finally, this object is shared with
+            the Learnweb user interface, in which the summary of the users’ actions during a collaborative search activity
+            is shown. Based on the algorithmic analysis, the display shows the most important entities that members are
+            searching for related to the learning project they are collaborating on. The display is in graph form, with
+            the nodes representing the core concepts of the search results and the edges showing how they are interconnected.</p>
+
+        <div class="row mt-2">
+            <h3>References</h3>
+        </div>
+
+        <p id="ref1">[1]: Ilkou, E., Abu-Rasheed, H., Tavakoli, M., Hakimov, S., Kismihók, G., Auer, S., Nejdl, W.: Educor: An educational and career-oriented recommendation ontology.
+            In: International Semantic Web Conference. pp. 546–562. Springer (2021)</p>
+        <p id="ref2">[2]: <a href="https://schema.org/">https://schema.org/</a></p>
+        <p id="ref3">[3]: <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></p>
+        <p id="ref4">[4]: Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.W., da Silva Santos, L.B., Bourne, P.E., et al.: The fair
+            guiding principles for scientific data management and stewardship. Scientific data 3(1), 1–9 (2016)</p>
+        <p id="ref5">[5]: The ontology page can be found in <a href="http://ontology.tib.eu/pkg/">http://ontology.tib.eu/pkg/</a></p>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </main>
+</body>
+</html>
