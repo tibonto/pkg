@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #606c71;
+}
+
+.main-content {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 64em) {
+    .page-header {
+        padding: 5rem 6rem;
+    }
+
+    .btn-bgr {
+        padding: 0.75rem 1rem;
+    }
+}
+
+.btn-bgr {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn-bgr:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #159957;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+.p-m-bottom {
+    margin-bottom: 1em;
+}
