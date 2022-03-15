@@ -1,4 +1,4 @@
-# Personal Knowledge Graph Ontology for Web  
+# Personal Knowledge Graph Ontology for Web Search  
 Eleni Ilkou[^1], Davide Taibi[^2], Marco Fisichella[^1], and Tetiana Tolmachova[^1]
 
 [^1]: L3S Research Center, Leibniz University of Hannover, Germany
