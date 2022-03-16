@@ -10,7 +10,7 @@ Web search engines thrive towards personalisation. At the same time, Personal Kn
 
 **Keywords:** Ontology, Personalized Knowledge Graph, Collaborative Learning.
 
-**GitHub repository:** [https://tibonto.github.io/pkg/](https://tibonto.github.io/pkg/)
+**GitHub repository:** [https://github.com/tibonto/pkg](https://github.com/tibonto/pkg)
 
 **Ontology page:** [http://ontology.tib.eu/pkg/](http://ontology.tib.eu/pkg/)
 
